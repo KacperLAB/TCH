@@ -21,3 +21,6 @@ docker run -d -p 80:80 --name ng nginx
 ## Zmiana portów na własne ryzyko ! -  te użyte przy uruchomieniu współpracują z tymi zdefiniowanymi w pliku konfiguracyjnym
 
 ## W zależności od urządzenia, wymagane może być pobranie innej wersji obrazu alpine i dokonanie zmian w pliku Dockerfile1
+
+## W kalalogu zrzuty znajdują się zrzuty ekranu przedstawiające proces budowania, uruchamiania i testowania aplikacji
+
