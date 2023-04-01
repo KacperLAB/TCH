@@ -1,0 +1,11 @@
+FROM scratch
+ARG VERSION
+ENV VER=${VERSION}
+ADD alpine-minirootfs-3.17.3-x86_64.tar.gz /
+RUN apk add nodejs npm
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD ["node", "server.js"]
